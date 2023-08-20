@@ -1,0 +1,7 @@
+
+> @tools/tailwind-config@0.1.0 format /Users/Ezequiel/Downloads/ez/monorepo_ez_vue/tools/tailwind
+> prettier --check "**/*.{mjs,ts,md,json}" "--cache" "--cache-location=node_modules/.cache/.prettiercache"
+
+Checking formatting...
+[error] Cannot find package 'prettier-plugin-tailwindcss' imported from /Users/Ezequiel/Downloads/ez/monorepo_ez_vue/tools/tailwind/noop.js
+ ELIFECYCLE  Command failed with exit code 1.

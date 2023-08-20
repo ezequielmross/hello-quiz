@@ -1,0 +1,33 @@
+{
+  "name": "quiz-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "dev": "ts-node --esm server.ts",
+    "build": "echo \"build\"",
+    "lint": "eslint .",
+    "format": "prettier --check \"**/*.{mjs,ts,md,json}\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@packages/api": "latest"
+  },
+  "devDependencies": {
+    "@tools/eslint-config": "latest",
+    "@tools/prettier-config": "latest",
+    "@tools/tsconfig": "latest",
+    "@types/node": "^18.17.5",
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "~5.1.6"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "eslint:recommended"
+    ]
+  },
+  "prettier": "@tools/prettier-config"
+}

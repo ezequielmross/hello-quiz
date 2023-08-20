@@ -1,3 +1,67 @@
+# Welcome
+
+Based in https://github.com/t3-oss/create-t3-turbo
+
+## About
+
+Ever wondered how to migrate your T3 application into a monorepo? Stop right here! This is the perfect starter repo to get you running with the perfect stack!
+
+It uses [Turborepo](https://turborepo.org) and contains:
+
+```text
+.github
+  └─ workflows
+        └─ CI with pnpm cache setup
+.vscode
+  └─ Recommended extensions and settings for VSCode users
+apps (ref: `@apps`)
+  ├─ expo
+  |   ├─ Expo SDK 49
+  |   ├─ React Native using React 18
+  |   ├─ Navigation using Expo Router
+  |   ├─ Tailwind using Nativewind
+  |   └─ Typesafe API calls using tRPC
+  └─ next.js
+      ├─ Next.js 13
+      ├─ React 18
+      ├─ Tailwind CSS
+      └─ E2E Typesafe API Server & Client
+packages (ref: `@packages`)
+  ├─ api
+  |   └─ tRPC v10 router definition
+  ├─ auth
+  |   └─ Authentication using next-auth. **NOTE: Only for Next.js app, not Expo**
+  └─ db
+      └─ Typesafe db calls using Drizzle & Planetscale
+tools (ref: `@tools`)
+  ├─ eslint
+  |   └─ shared, fine-grained, eslint presets
+  ├─ prettier
+  |   └─ shared prettier configuration
+  ├─ tailwind
+  |   └─ shared tailwind configuration
+  └─ typescript
+      └─ shared tsconfig you can extend from
+```
+
+## Quick Start
+
+> **Note**
+> The [db](./packages/db) package is preconfigured to use PlanetScale and is edge-ready with the [database.js](https://github.com/planetscale/database-js) driver. If you're using something else, make the necesary modifications to the [schema](./packages/db/schema) as well as the [client](./packages/db/index.ts) and the [drizzle config](./packages/db/drizzle.config.ts).
+
+To get it running, follow the steps below:
+
+### 1. Setup dependencies
+
+```bash
+# Install dependencies
+pnpm i
+
+# Configure environment variables
+# There is an `.env.example` in the root directory you can use for reference
+cp .env.example .env
+```
+
 # Hello Quiz
 This take home project is designed to test your understanding of Vue.js, Python/Node.js, REST APIs, and potentially security, authentication and databases. We are looking for your creativity in the solution, code readability/structure and your thoughts and design process. There is no perfect solution so please remember to have fun.
 
@@ -91,4 +155,3 @@ b. Low-cost meals
 c. Catering services
 d. Home cleaning services
 ```
-

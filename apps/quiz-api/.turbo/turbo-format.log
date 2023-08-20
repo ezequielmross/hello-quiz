@@ -1,0 +1,7 @@
+
+> quiz-api@0.0.0 format /Users/Ezequiel/Downloads/ez/monorepo_ez_vue/apps/quiz-api
+> prettier --check "**/*.{mjs,ts,md,json}" "--cache" "--cache-location=node_modules/.cache/.prettiercache"
+
+Checking formatting...
+[error] Cannot find package 'prettier-plugin-tailwindcss' imported from /Users/Ezequiel/Downloads/ez/monorepo_ez_vue/apps/quiz-api/noop.js
+ ELIFECYCLE  Command failed with exit code 1.
