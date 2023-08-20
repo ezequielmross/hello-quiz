@@ -1,10 +1,6 @@
 # Welcome
 
-Based in https://github.com/t3-oss/create-t3-turbo
-
 ## About
-
-Ever wondered how to migrate your T3 application into a monorepo? Stop right here! This is the perfect starter repo to get you running with the perfect stack!
 
 It uses [Turborepo](https://turborepo.org) and contains:
 
@@ -42,9 +38,8 @@ To get it running, follow the steps below:
 # Install dependencies
 pnpm i
 
-# Configure environment variables
-# There is an `.env.example` in the root directory you can use for reference
-cp .env.example .env
+# Run apps
+pnpm dev
 ```
 
 # Hello Quiz

@@ -108,7 +108,9 @@ export const apis: RouteOptions[] = [
     url: '/api/questions',
     method: 'GET',
     handler: (req) => {
-      return questions;
+      return questions.map(q => {
+        return { ...q, correct: null };
+      });
     }
   },
   {
