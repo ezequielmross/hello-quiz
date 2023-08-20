@@ -9,45 +9,30 @@ Ever wondered how to migrate your T3 application into a monorepo? Stop right her
 It uses [Turborepo](https://turborepo.org) and contains:
 
 ```text
-.github
-  └─ workflows
-        └─ CI with pnpm cache setup
 .vscode
   └─ Recommended extensions and settings for VSCode users
 apps (ref: `@apps`)
-  ├─ expo
-  |   ├─ Expo SDK 49
-  |   ├─ React Native using React 18
-  |   ├─ Navigation using Expo Router
-  |   ├─ Tailwind using Nativewind
-  |   └─ Typesafe API calls using tRPC
-  └─ next.js
-      ├─ Next.js 13
-      ├─ React 18
-      ├─ Tailwind CSS
-      └─ E2E Typesafe API Server & Client
+  ├─ quiz
+  |   ├─ Vue 3
+  |   ├─ Vite
+  └─ quiz-api
+      ├─ Nodejs
+      ├─ Fastify
 packages (ref: `@packages`)
   ├─ api
-  |   └─ tRPC v10 router definition
-  ├─ auth
-  |   └─ Authentication using next-auth. **NOTE: Only for Next.js app, not Expo**
+  |   └─ Server packages
   └─ db
-      └─ Typesafe db calls using Drizzle & Planetscale
+      └─ Typesafe db calls using Drizzle & Planetscale 
 tools (ref: `@tools`)
   ├─ eslint
   |   └─ shared, fine-grained, eslint presets
   ├─ prettier
   |   └─ shared prettier configuration
-  ├─ tailwind
-  |   └─ shared tailwind configuration
   └─ typescript
       └─ shared tsconfig you can extend from
 ```
 
 ## Quick Start
-
-> **Note**
-> The [db](./packages/db) package is preconfigured to use PlanetScale and is edge-ready with the [database.js](https://github.com/planetscale/database-js) driver. If you're using something else, make the necesary modifications to the [schema](./packages/db/schema) as well as the [client](./packages/db/index.ts) and the [drizzle config](./packages/db/drizzle.config.ts).
 
 To get it running, follow the steps below:
 
